@@ -1,0 +1,3 @@
+testrunner\AmazonTestRunner.class
+AppHooks\ApplicationHooks.class
+stepdefinitions\AmazonStepDefinition.class
