@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: testrunner.AmazonTestRunner
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.394 s - in testrunner.AmazonTestRunner
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.716 s - in testrunner.AmazonTestRunner

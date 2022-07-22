@@ -9,6 +9,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import pages.AmazonPractice;
+import utils.ElementUtils;
 
 public class AmazonStepDefinition {
 	
@@ -22,18 +23,21 @@ public class AmazonStepDefinition {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		aP = new AmazonPractice(driver);
+		ElementUtils.takeScreenshot(driver, "./screenshots/test1.png");
 	}
 		
 	@Given("user is on amazon main page")
 	public void user_is_on_amazon_main_page() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		System.out.println("Main page loaded");
+		ElementUtils.takeScreenshot(driver, "./screenshots/test2.png");
 	}
 
 	@Given("page title is {string}")
 	public void page_title_is_be(String title) {
 		Assert.assertEquals(title, aP.getTitleAmazon());
 		System.out.println("Page title matched");
+		ElementUtils.takeScreenshot(driver, "./screenshots/test3.png");
 	}
 
 	@When("user clicks on {string} in All dropdown")
@@ -41,6 +45,7 @@ public class AmazonStepDefinition {
 	    aP.selectWatches(string);
 	    try {
 			Thread.sleep(5000);
+			ElementUtils.takeScreenshot(driver, "./screenshots/test4.png");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -66,6 +71,7 @@ public class AmazonStepDefinition {
 		
 		Assert.assertEquals(sideOp, aP.checkSideOptions());
 		System.out.println("Side options checked and verified");
+		ElementUtils.takeScreenshot(driver, "./screenshots/test5.png");
 	}
 	
 	@After public void tearDown() {
