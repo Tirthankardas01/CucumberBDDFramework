@@ -1,3 +1,3 @@
-D:\Eclipse Workspace\CucumberFramework\src\test\java\stepdefinitions\AmazonStepDefinition.java
-D:\Eclipse Workspace\CucumberFramework\src\test\java\testrunner\AmazonTestRunner.java
-D:\Eclipse Workspace\CucumberFramework\src\test\java\AppHooks\ApplicationHooks.java
+D:\Eclipse Workspace\CucumberFramework\src\test\java\configReader\ConfigReader.java
+D:\Eclipse Workspace\CucumberFramework\src\test\java\testrunner\MMTTestRunner.java
+D:\Eclipse Workspace\CucumberFramework\src\test\java\stepdefinitions\MakeMyTripStepDefinition.java
