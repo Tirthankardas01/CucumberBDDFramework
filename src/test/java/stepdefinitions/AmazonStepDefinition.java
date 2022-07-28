@@ -17,14 +17,14 @@ public class AmazonStepDefinition {
 	private AmazonPractice aP;
 	private List<String> sideOp;
 	
-	@Before public void setUp() {
-		driver = DriverFactory.init_driver();
-		driver.get("https://www.amazon.in/");
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		aP = new AmazonPractice(driver);
-		ElementUtils.takeScreenshot(driver, "./screenshots/test1.png");
-	}
+//	@Before public void setUp() {
+//		driver = DriverFactory.init_driver();
+//		driver.get("https://www.amazon.in/");
+//		driver.manage().window().maximize();
+//		driver.manage().deleteAllCookies();
+//		aP = new AmazonPractice(driver);
+//		ElementUtils.takeScreenshot(driver, "./screenshots/test1.png");
+//	}
 		
 	@Given("user is on amazon main page")
 	public void user_is_on_amazon_main_page() {
@@ -74,11 +74,11 @@ public class AmazonStepDefinition {
 		ElementUtils.takeScreenshot(driver, "./screenshots/test5.png");
 	}
 	
-	@After public void tearDown() {
-		driver.close();
-		driver.quit();
-		driver=null;
-		System.out.println("Browser closed");
-	}
+//	@After public void tearDown() {
+//		driver.close();
+//		driver.quit();
+//		driver=null;
+//		System.out.println("Browser closed");
+//	}
 
 }
